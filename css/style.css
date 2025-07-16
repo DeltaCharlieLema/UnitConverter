@@ -1,0 +1,21 @@
+:root {
+    --background-color: #1c1c1c;
+    --h1-text: #fff;
+}
+
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: var(--background-color);
+}
+main{
+    color: var(--h1-text)
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
