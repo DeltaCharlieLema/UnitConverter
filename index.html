@@ -9,25 +9,26 @@
     <main>
         <div class="header">
             <h1>Metric/Imperial Unit Conversion</h1>
-            <input type="text" id="main-output"></input>
+            <input type="text" id="main-input" placeholder="1">
 
             <input id="convert" type="button" value="Convert">
         </div>
-        <ul id="container">
-            <li class="result length">
+        <div id="container">
+            <div class="result length">
                 <h2 class="description">Length (Meter/Feet)</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, velit!</p>
-            </li>
-            <li class="result volume">
+                <div id="output-l"><</div>
+            </div>
+            <div class="result volume">
                 <h2 class="description">Volume (Liters/Gallons)
                 </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, explicabo?</p>
-            </li>
-            <li class="result mass">
+                <div id="output-v"></div>
+            </div>
+            <div class="result mass">
                 <h2 class="description">Mass (Kilograms/Pounds)</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cum?</p>
-            </li>
-        </ul>
+                <div id="output-m"></div>
+            </div>
+        </div>
     </main>
+<script src="index.js"></script>
 </body>
 </html>

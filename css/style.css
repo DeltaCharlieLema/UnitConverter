@@ -2,7 +2,9 @@
         --background-color: #1c1c1c;
         --h1-text: #fff;
         --header-color: #6943FF;
-        --result-color: #F4F4F4;
+        --container-color: #F4F4F4;
+        --result-color: #273549;
+        --div-result: #fff;
     }
 
     *{
@@ -27,40 +29,50 @@
         background-color: var(--header-color);
         margin: 0;
     }
-    #main-output{
+    h1{
+        color: white;
+        outline: red;
+    }
+    #main-input{
         height: 100px;
+        display: inline-block;
         width: 100px;
-        border: solid 1px var(--h1-text);
+        border: solid 0.15rem var(--h1-text);
         border-radius: 3px;
         margin: 20px;
         background: none;
         text-align: center;
-        font-size: 50px;
+        font-size: 3.5rem;
         color: var(--h1-text);
     }
     #convert{
         padding: 10px 25px;
         margin: 25px;
+        font-size: 1.2rem;
     }
     #container{
         color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: var(--result-color);
+        background-color: var(--container-color);
         margin: 0;
         padding: 30px 0;
     }
     .result{
         display: flex;
         flex-direction: column;
-        background: white;
+        background: var(--result-color);
         align-items: center;
         justify-content: center;
         text-align: center;
         width: 90%;
         margin: 15px;
         padding: 40px;
+        color: var(--h1-text);
+    }
+    .result > div {
+        color: var(--div-result);
     }
     li h2{
         margin: 0;
@@ -70,4 +82,14 @@
     }
     li{
         list-style: none;
+    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background-color: #1c1c1c;
+            --h1-text: #CCC1FF;
+            --header-color: #6943FF;
+            --container-color: #1F2937;
+            --result-color: #273549;
+            --div-result: white;
+        }
     }
